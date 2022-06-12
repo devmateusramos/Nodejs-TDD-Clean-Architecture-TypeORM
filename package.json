@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/devmateusramos/Nodejs-TDD-Clean-Architecture-TypeORM/issues"
   },
-  "homepage": "https://github.com/devmateusramos/Nodejs-TDD-Clean-Architecture-TypeORM#readme"
+  "homepage": "https://github.com/devmateusramos/Nodejs-TDD-Clean-Architecture-TypeORM#readme",
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
